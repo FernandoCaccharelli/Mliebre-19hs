@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: roboto;
+    background-color: #ebebeb;
+}
+/*////////////////////// HEADER //////////////////*/
+header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+div.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+div.top-header p{                /*  Compra en cuotas y sin tarjeta de credito */
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+header div.logo,                /* Logo y Barra de búsqueda */
+header div.form,
+header div.dollars-hands {
+    width: 30%;
+}
+
+div.logo {
+    padding: 10px;
+}
+
+div.form {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+header div.top-header div.form .searching {
+    width: 300px;
+    height: 30px
+}
+
+header .form i {
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 1px;
+}
+
+
+/*/////////////////////////////////////           NAV                  ///////////////////////*/
+nav, .first-list, .second-list {
+    font-size: 12px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.first-list li {
+    padding: 7px;
+}
+
+.second-list li {
+    padding: 7px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 20px 0px;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ///////////////////////////////////////    LOGIN    ///////////////////////////////////7*/
+
+
+
+
+
+.login {
+    background-color: rgb(180, 180, 180);
+    height: 200px;
+}
+
+form .user {                /* /////////////////    Usuario    //////////////////////7*/
+    margin: 50px 300px 0px;
+    width: 40%;
+    height: 20px;
+    text-align: center;
+}
+form .pass {              /* /////////////////    Contraseña    //////////////////////7*/
+    margin: 10px 300px;
+    width: 40%;
+    height: 20px;
+    text-align: center;
+}
+
+form .buttom {            /* /////////////////    Boton enviar    //////////////////////7*/
+    margin: 5px 490px;
+    width: 10%;
+    height: 25px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+}
+
+
+form .buttom:hover {
+    background-color: #0022AA;
+}

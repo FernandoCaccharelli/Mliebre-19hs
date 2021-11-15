@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: roboto;
+    background-color: #ebebeb;
+}
+/*////////////////////// HEADER //////////////////*/
+header {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+div.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+div.top-header p{                /*  Compra en cuotas y sin tarjeta de credito */
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header div.logo,                /* Logo y Barra de búsqueda */
+header div.form {
+    width: 50%;
+}
+
+div.logo {
+    padding: 10px;
+}
+
+div.form {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+header .form i {
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 1px;
+}
+
+nav, .first-list, .second-list {
+    font-size: 12px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.first-list li {
+    padding: 7px;
+    font-size: 15px;
+}
+
+.second-list li {
+    padding: 7px;
+    font-size: 15px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 20px 0px;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu {
+    background-color: #1259c3;
+    height: 50px;
+    width: 50px;
+    color: white;
+    padding: 10px;
+    margin: 10vw 40vw;
+    font-size: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*///////////////////// SECTION BANNER ////////////////////*/
+.sectionBanner, .imgBanner {
+    width: 100%;
+}
+
+/*//////////////////////// MAIN //////////////////////*/
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+div.last-visit,
+div.offers {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 12px;
+}
+
+.title {
+    font-size: 24px;
+    color: #666;
+    margin: 20px 0px;
+}
+
+.price {
+font-size: 18px;
+width: 30px;
+}
+
+.discount {
+font-size: 16px;
+width: 70%;
+font-weight: normal;
+color: #39b54a;
+position: relative;
+right: -8vw;
+}
+
+.description {            /*////////////  Se oculta la descripción //////*/
+    font-size: 16px;
+    font-weight: normal;
+    color: #666;
+    margin-top: 20px;
+    display: none;
+}
+
+
+main section article:hover .description{  /*////////Cuando paso el mouse aparece la descripción ////*/
+    display: block;
+}
+
+
+main section {
+background-color: rgb(209, 204, 204);
+}
+
+main section article {                         /*   Caja de cada articulo completo*/
+    background-color: #fff;
+    margin: 10px ;
+    border: 1px solid black;
+    width: 270px;
+       
+}
+
+.main-article i {         /* Imagen camioncito */
+    display: block;
+    font-size: 16px;
+    color: #39b54a;
+    border: #39b54a 1px solid;
+    border-radius: 100%;
+    width: 32px;
+    height: 31px;
+    padding: 6px;
+    background-color: #fff;
+    position: absolute;
+    right: 22px;
+    top: -1vw;
+}
+
+main section div.products article i{      /*/////////// Camioncito gira 90° /////////////*/
+    transition: transform 1s;
+}
+
+main section div.products article:hover i{
+    transform: rotate(-90deg);
+}
+
+
+.imgProduct{              /* Imagen Cafetera, Macbook, Celular, TV */
+    width: 100%;
+}
+
+.imgProduct:hover{    /*///////////// Cuando se pasa el mouse se activa la sombra del producto /*/
+    box-shadow: 3px 3px 3px rgb(120, 120, 130);
+}
+
+
+article div.main-article {          /* Caja de precio, descuento, descripcion e imagen */
+    width: 100%;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+}
+
+
+
+/*////////////////////////// FOOTER ////////////////////////////*/
+footer section article{
+    text-align: center;
+    width: 33%;
+}
+
+.imgFooter {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 2vw;
+    color:blue
+}
+
+footer section h4 {
+    text-align: left;
+    margin-top: 4vw;
+    margin-left: 1vw;
+    font-size: 14px;
+}
+
+footer section  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*////////////////////////// MEDIA QUERY //////////////////////////*/
+
+@media (max-width: 361px){
+    .description, nav ul{
+        display: none;
+    }
+}
+
+@media (min-width: 769px){
+    main section article, .burger-menu{
+         box-shadow: 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+
+    header div.logo,                /* Logo y Barra de búsqueda */
+    header div.form,
+    header div.dollars-hands {
+        width: 30%;
+    }
+
+    header div.top-header div.dollars-hands p{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+
+    header div.top-header div.form .searching {
+        width: 300px;
+        height: 30px;
+    }
+
+    div.logo {
+    padding: 10px;
+    }
+
+    nav div.burger-menu{
+        display: none;
+    }
+
+
+
+}
+
+
+
